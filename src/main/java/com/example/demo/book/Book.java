@@ -1,4 +1,4 @@
-package com.example.demo.entity;
+package com.example.demo.book;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -28,7 +28,7 @@ public class Book {
         return title;
     }
 
-    public String getAuthor(){
+    public String getAuthor() {
         return author;
     }
 }

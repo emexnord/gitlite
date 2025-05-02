@@ -1,6 +1,6 @@
-package com.example.demo;
+package com.example.demo.book;
 
-public class BookNotFoundException extends RuntimeException{
+public class BookNotFoundException extends RuntimeException {
     public BookNotFoundException(String message, Throwable cause) {
         super(message, cause);
     }
