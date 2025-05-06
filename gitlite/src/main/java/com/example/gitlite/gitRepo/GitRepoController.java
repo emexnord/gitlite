@@ -20,7 +20,7 @@ public class GitRepoController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    private ResponseEntity<GitRepoResponseDto> create(GitRepoRequestDto requestDto) {
+    private ResponseEntity<GitRepoResponseDto> create(@RequestBody GitRepoRequestDto requestDto) {
         GitRepoResponseDto gitRepoResponseDto = gitRepoService.create(requestDto);
         return ResponseEntity.status(HttpStatus.CREATED).body(gitRepoResponseDto);
     }
